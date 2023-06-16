@@ -46,15 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Book.cs" />
-    <Compile Include="Borrow.cs" />
-    <Compile Include="BorrowDetail.cs" />
-    <Compile Include="ILogin.cs" />
-    <Compile Include="Librarian.cs" />
-    <Compile Include="Reader.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderDetail.cs" />
+    <Compile Include="Staff.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="UI.cs" />
   </ItemGroup>
   <ItemGroup>

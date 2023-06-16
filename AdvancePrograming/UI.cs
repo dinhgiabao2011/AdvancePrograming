@@ -6,48 +6,32 @@ namespace AdvancePrograming
 	{
 		public static void Title()
 		{
-			Console.WriteLine("*********************************************");
-			Console.WriteLine("** Welcom to The Library Management System **");
-			Console.WriteLine("*********************************************");
+			Console.WriteLine("*****************************");
+			Console.WriteLine("** Welcom to Tra Sua Store **");
+			Console.WriteLine("*****************************");
 		}
-		public static void MenuForLogin()
+		
+		public static void Menu()
 		{
 			Console.WriteLine();
-			Console.WriteLine("1. Login as a Librarian");
-			Console.WriteLine("2. Login as a Student");
-			Console.WriteLine("3. Exit");
-			Console.WriteLine();
-		}
-		public static void MenuForLibrarian()
-		{
-			Console.WriteLine();
-			Console.WriteLine("1. Add Book");
-			Console.WriteLine("2. View Book");
-			Console.WriteLine("3. Update Book");
-			Console.WriteLine("4. Delete Book");
-			Console.WriteLine("5. Borrow Book Management");
-			Console.WriteLine("6. Search Borrow Book");
-			Console.WriteLine("7. Logout");
+			Console.WriteLine("1. Add Product");
+			Console.WriteLine("2. View Product");
+			Console.WriteLine("3. Update Product");
+			Console.WriteLine("4. Delete Product");
+			Console.WriteLine("5. Add Information Customer ");
+			Console.WriteLine("6. Order Product ");
+			Console.WriteLine("7. Customer Order Product Management");
+			Console.WriteLine("8. Search Order Product");
+			Console.WriteLine("9. Remove Order Product");
+			Console.WriteLine("10. Exit");
 			Console.WriteLine();
 			Console.WriteLine("Please choose your option");
 
 		}
-		public static void MenuForReader()
+	
+		public static int EnterProductID()
 		{
-			Console.WriteLine();
-			Console.WriteLine("1. View Book");
-			Console.WriteLine("2. Add Information Student");
-			Console.WriteLine("3. Borrow Book");
-			Console.WriteLine("4. Return Book");
-			Console.WriteLine("5. Logout");
-			Console.WriteLine();
-			Console.WriteLine("Please choose your option");
-
-		}
-
-		public static int EnterBookID()
-		{
-			Console.Write("* Enter Book ID: ");
+			Console.Write("* Enter Product ID: ");
 			return int.Parse(Console.ReadLine());
 		}
 		public static int EnterQuantity()
@@ -60,25 +44,20 @@ namespace AdvancePrograming
 			Console.Write("* Enter Record ID: ");
 			return int.Parse(Console.ReadLine());
 		}
-		public static int EnterRecordIdToReturn()
+		public static int EnterRecordIdToRemove()
 		{
-			Console.Write("* Enter Record ID to return Book: ");
+			Console.Write("* Enter Record ID to remove Product: ");
 			return int.Parse(Console.ReadLine());
 		}
-		public static string EnterNameOfBook()
+		public static string EnterNameOfProduct()
 		{
-			Console.Write("* Enter Name of Book: ");
+			Console.Write("* Enter Name of Product: ");
 			return Console.ReadLine();
 		}
-		public static string EnterAuthorOfBook()
+		public static double EnterPriceOfProduct()
 		{
-			Console.Write("* Enter Author of Book: ");
-			return Console.ReadLine();
-		}
-		public static string EnterSubjectOfBook()
-		{
-			Console.Write("* Enter Subject of Book: ");
-			return Console.ReadLine();
+			Console.Write("* Enter Price of Product: ");
+			return double.Parse(Console.ReadLine());
 		}
 		public static string TypeExitToFinish()
 		{
@@ -99,7 +78,7 @@ namespace AdvancePrograming
 			Console.WriteLine("Invalid Result!!!");
 			Console.WriteLine("Please enter ID Again!!!");
 		}
-		public static void SearchNameStudentFail()
+		public static void SearchNameCustomerFail()
 		{
 			Console.WriteLine("Invalid Result!!!");
 			Console.WriteLine("Please enter Name Again!!!");
@@ -117,33 +96,38 @@ namespace AdvancePrograming
 		{
 			Console.WriteLine("Delete successfully!!!");
 		}
-		public static int EnterStudentID()
+		public static int EnterCustomerID()
 		{
-			Console.Write("* Enter Student ID: ");
+			Console.Write("* Enter Customer ID: ");
 			return int.Parse(Console.ReadLine());
 		}
-		public static string EnterStudentName()
+		public static int EnterCustomerAge()
 		{
-			Console.Write("* Enter Student Name: ");
+			Console.Write("* Enter Customer Age: ");
+			return int.Parse(Console.ReadLine());
+		}
+		public static string EnterCustomerName()
+		{
+			Console.Write("* Enter Customer Name: ");
 			return Console.ReadLine();
 		}
-		public static string EnterStudentEmail()
+		public static string EnterCustomerAddress()
 		{
-			Console.Write("* Enter Student Email: ");
+			Console.Write("* Enter Customer Address: ");
 			return Console.ReadLine();
 		}
-		public static string EnterStudentPhone()
+		public static string EnterCustomerPhone()
 		{
-			Console.Write("* Enter Student Phone: ");
+			Console.Write("* Enter Customer Phone: ");
 			return Console.ReadLine();
 		}
 		public static void IdAlreadyExist()
 		{
 			Console.WriteLine("Id Already Exist. Please Enter Another ID !!!");
 		}
-		public static void BorrowSuccessfully()
+		public static void OrderSuccessfully()
 		{
-			Console.WriteLine("Borrow Successfully");
+			Console.WriteLine("Order Successfully");
 		}
 	}
 }

@@ -6,24 +6,26 @@ using System.Threading.Tasks;
 
 namespace AdvancePrograming
 {
-	public abstract class Reader
+	public abstract class Person
 	{
 		public string Name { get; set; }
 
-		public string Email { get; set; }
+		public int Age { get; set; }
+
+		public string Address { get; set; }
 
 		public string PhoneNumber { get; set; }
 
-		public Reader(string name, string email, string phoneNumber)
+		public Person(string name, int age, string address, string phoneNumber)
 		{
 			Name = name;
-			Email = email;
+			Age = age;
+			Address = address;
 			PhoneNumber = phoneNumber;
 		}
-		public Reader()
+		public Person()
 		{
-
 		}
-		public abstract void InputInformation();
+		public abstract void EnterInformation();
 	}
 }
